@@ -20,6 +20,23 @@ body {
   width: 1190px;
   margin: 0 auto; }
 
+.ftch {
+  overflow: hidden;
+  padding: 0 0 20px;
+  height: 35px;
+  background: url(../images/dian.png) repeat-x 0 18px;
+  text-align: center;
+  font-size: 24px;
+  line-height: 35px; }
+  .ftch h3 {
+    display: inline;
+    padding: 0 50px;
+    background-color: #f6f6f6;
+    font-weight: 400;
+    font-size: 26px;
+    color: #333;
+    font-family: fzzhengheis-el-gbregular; }
+
 #nav_t {
   height: 30px;
   background: #e3e4e5;
@@ -39,7 +56,14 @@ body {
       width: 190px;
       box-shadow: 0 -12px 10px rgba(0, 0, 0, 0.2); }
     #nav_t .nav_k .nav_l {
-      left: 208px; }
+      left: 208px;
+      height: 28px;
+      line-height: 28px;
+      padding: 1px 7px 0px 7px;
+      margin-top: 1px; }
+    #nav_t .nav_k .nav_l:hover {
+      background: #fff;
+      top: 0; }
     #nav_t .nav_k .nav_r {
       right: 0px; }
       #nav_t .nav_k .nav_r span {
@@ -179,7 +203,6 @@ body {
 
 #nav_b {
   height: 480px;
-  background: #204D74;
   margin-bottom: 10px; }
   #nav_b .case {
     width: 190px;
@@ -205,17 +228,98 @@ body {
   #nav_b .banner {
     width: 790px;
     height: 100%;
-    background: #255625;
     margin: 0 10px; }
     #nav_b .banner .banner_img {
       position: relative;
       margin-bottom: 10px;
-      height: 340px; }
+      height: 340px;
+      top: 0;
+      left: 0; }
+      #nav_b .banner .banner_img .left_a {
+        display: none;
+        line-height: 60px;
+        text-align: center;
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        left: 0;
+        margin-top: -30px;
+        width: 30px;
+        height: 60px;
+        background-color: #333;
+        background-color: rgba(0, 0, 0, 0.1); }
+        #nav_b .banner .banner_img .left_a i {
+          font-size: 20px;
+          color: #fff;
+          line-height: 60px;
+          text-align: center; }
+      #nav_b .banner .banner_img .left_a:hover {
+        background: rgba(0, 0, 0, 0.6); }
+      #nav_b .banner .banner_img .right_a {
+        display: none;
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        right: 0;
+        margin-top: -30px;
+        width: 30px;
+        height: 60px;
+        background-color: #333;
+        background-color: rgba(0, 0, 0, 0.1);
+        line-height: 60px;
+        text-align: center; }
+        #nav_b .banner .banner_img .right_a i {
+          font-size: 20px;
+          color: #fff;
+          line-height: 60px;
+          text-align: center; }
+      #nav_b .banner .banner_img .right_a:hover {
+        background: rgba(0, 0, 0, 0.6); }
       #nav_b .banner .banner_img ul {
-        overflow: hidden;
         position: absolute;
         width: 100%;
-        height: 100%; }
+        height: 100%;
+        background: #DFF0D8;
+        overflow: hidden; }
+        #nav_b .banner .banner_img ul li {
+          position: absolute;
+          top: 0;
+          left: 0; }
+      #nav_b .banner .banner_img ol {
+        width: 180px;
+        height: 12px;
+        position: absolute;
+        left: 50%;
+        margin-left: -91px;
+        bottom: 20px;
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        padding: 4px 8px; }
+        #nav_b .banner .banner_img ol li {
+          float: left;
+          width: 12px;
+          height: 12px;
+          background: #fff;
+          border-radius: 50%;
+          margin: 0 5px;
+          text-indent: -99999px; }
+        #nav_b .banner .banner_img ol li.active {
+          background: red; }
+    #nav_b .banner .banner_advert {
+      margin-left: -10px;
+      height: 130px; }
+      #nav_b .banner .banner_advert .banner_advert_b_1 {
+        overflow: hidden;
+        margin-left: 10px;
+        width: 390px;
+        height: 130px;
+        background: #f0f; }
+      #nav_b .banner .banner_advert .banner_advert_b_2 {
+        overflow: hidden;
+        margin-left: 10px;
+        width: 390px;
+        height: 130px;
+        background: #fff; }
   #nav_b .hi {
     width: 190px;
     height: 100%;
@@ -560,7 +664,7 @@ body {
       height: 369px;
       background-color: #fff; }
   #guide .guide_special {
-    margin-right: 10px;
+    margin: 0 10px;
     width: 390px;
     height: 444px;
     float: left;
@@ -619,22 +723,6 @@ body {
 #character {
   height: 585px;
   margin-bottom: 30px; }
-  #character .ftch {
-    overflow: hidden;
-    padding: 0 0 20px;
-    height: 35px;
-    background: url(../images/dian.png) repeat-x 0 18px;
-    text-align: center;
-    font-size: 24px;
-    line-height: 35px; }
-    #character .ftch h3 {
-      display: inline;
-      padding: 0 50px;
-      background-color: #f6f6f6;
-      font-weight: 400;
-      font-size: 26px;
-      color: #333;
-      font-family: fzzhengheis-el-gbregular; }
   #character .chmina ul {
     height: 530px;
     overflow: hidden;
@@ -658,9 +746,965 @@ body {
       margin: 0 5px 10px;
       background-color: #fff;
       position: relative; }
-    #character .chmina ul .chmina_item_7, #character .chmina ul .chmina_item_8 {
+    #character .chmina ul .chmina_item_7,
+    #character .chmina ul .chmina_item_8 {
       width: 190px;
       height: 170px; }
+
+#lovelife {
+  height: 578px;
+  margin-bottom: 30px; }
+  #lovelife .lovelife_clothing_l {
+    width: 590px;
+    margin-right: 10px;
+    overflow: hidden; }
+    #lovelife .lovelife_clothing_l .lovelife_clothing_l_t {
+      background-color: #974676;
+      height: 26px;
+      padding: 16px 20px 16px 25px; }
+    #lovelife .lovelife_clothing_l .lovelife_clothing_l_b {
+      padding: 10px;
+      background-color: #fff;
+      overflow: hidden; }
+      #lovelife .lovelife_clothing_l .lovelife_clothing_l_b .lovelife_clothing_l_b_one {
+        width: 200%; }
+        #lovelife .lovelife_clothing_l .lovelife_clothing_l_b .lovelife_clothing_l_b_one .love1 {
+          position: relative;
+          float: left;
+          width: 183px;
+          height: 260px;
+          overflow: hidden;
+          margin-right: 10px;
+          background-color: #f7f7f7; }
+        #lovelife .lovelife_clothing_l .lovelife_clothing_l_b .lovelife_clothing_l_b_one .love2 {
+          float: left;
+          width: 376px;
+          height: 260px;
+          position: relative;
+          overflow: hidden; }
+        #lovelife .lovelife_clothing_l .lovelife_clothing_l_b .lovelife_clothing_l_b_one .love3 {
+          clear: both;
+          height: 130px;
+          overflow: hidden;
+          padding-top: 10px; }
+        #lovelife .lovelife_clothing_l .lovelife_clothing_l_b .lovelife_clothing_l_b_one .coverup {
+          position: absolute;
+          right: -10px;
+          background-color: #fff;
+          width: 10px;
+          height: 1000px;
+          top: 0; }
+      #lovelife .lovelife_clothing_l .lovelife_clothing_l_b .lovelife_clothing_l_b_two {
+        padding-left: 1px;
+        position: relative; }
+        #lovelife .lovelife_clothing_l .lovelife_clothing_l_b .lovelife_clothing_l_b_two .lovelogoul {
+          width: 100%;
+          height: 45px;
+          overflow: hidden; }
+  #lovelife .lovelife_clothing_r {
+    width: 590px;
+    overflow: hidden; }
+    #lovelife .lovelife_clothing_r .lovelife_clothing_r_t {
+      background-image: linear-gradient(90deg, #cd375e, #c1314d);
+      background-color: #cd375e;
+      height: 26px;
+      padding: 16px 20px 16px 25px; }
+    #lovelife .lovelife_clothing_r .lovelife_clothing_r_b {
+      padding: 10px;
+      background-color: #fff;
+      overflow: hidden; }
+      #lovelife .lovelife_clothing_r .lovelife_clothing_r_b .lovelife_clothing_r_b_one {
+        position: relative;
+        overflow: hidden; }
+        #lovelife .lovelife_clothing_r .lovelife_clothing_r_b .lovelife_clothing_r_b_one .lovenav {
+          width: 200%; }
+          #lovelife .lovelife_clothing_r .lovelife_clothing_r_b .lovelife_clothing_r_b_one .lovenav .love4 {
+            position: relative;
+            float: left;
+            width: 183px;
+            height: 260px;
+            overflow: hidden;
+            margin-right: 10px;
+            background-color: #f7f7f7; }
+          #lovelife .lovelife_clothing_r .lovelife_clothing_r_b .lovelife_clothing_r_b_one .lovenav .love5 {
+            float: left;
+            width: 376px;
+            height: 260px;
+            position: relative;
+            overflow: hidden; }
+          #lovelife .lovelife_clothing_r .lovelife_clothing_r_b .lovelife_clothing_r_b_one .lovenav .love6 {
+            clear: both;
+            height: 130px;
+            overflow: hidden;
+            padding-top: 10px; }
+          #lovelife .lovelife_clothing_r .lovelife_clothing_r_b .lovelife_clothing_r_b_one .lovenav .coverup2 {
+            position: absolute;
+            right: -10px;
+            background-color: #fff;
+            width: 10px;
+            height: 1000px;
+            top: 0; }
+      #lovelife .lovelife_clothing_r .lovelife_clothing_r_b .lovelife_clothing_r_b_two {
+        padding: 10px 0 0 0;
+        clear: both;
+        background-color: #fff; }
+        #lovelife .lovelife_clothing_r .lovelife_clothing_r_b .lovelife_clothing_r_b_two .lovelogou2 {
+          width: 100%;
+          height: 35px;
+          overflow: hidden; }
+
+#appliances {
+  height: 523px;
+  margin-bottom: 30px; }
+  #appliances .appliances_phone_l {
+    width: 590px;
+    margin-right: 10px;
+    overflow: hidden; }
+    #appliances .appliances_phone_l .appliances_phone_l_t {
+      background-color: #78538e;
+      height: 26px;
+      padding: 16px 20px 16px 25px; }
+    #appliances .appliances_phone_l .appliances_phone_l_b {
+      padding: 10px;
+      background-color: #fff;
+      overflow: hidden; }
+      #appliances .appliances_phone_l .appliances_phone_l_b .appliances_phone_l_b_one {
+        width: 200%; }
+        #appliances .appliances_phone_l .appliances_phone_l_b .appliances_phone_l_b_one .appl1 {
+          position: relative;
+          float: left;
+          width: 183px;
+          height: 260px;
+          overflow: hidden;
+          margin-right: 10px;
+          background-color: #f7f7f7; }
+        #appliances .appliances_phone_l .appliances_phone_l_b .appliances_phone_l_b_one .appl2 {
+          float: left;
+          width: 376px;
+          height: 260px;
+          position: relative;
+          overflow: hidden; }
+        #appliances .appliances_phone_l .appliances_phone_l_b .appliances_phone_l_b_one .appl3 {
+          clear: both;
+          height: 130px;
+          overflow: hidden;
+          padding-top: 10px; }
+        #appliances .appliances_phone_l .appliances_phone_l_b .appliances_phone_l_b_one .coverup {
+          position: absolute;
+          right: -10px;
+          background-color: #fff;
+          width: 10px;
+          height: 1000px;
+          top: 0; }
+      #appliances .appliances_phone_l .appliances_phone_l_b .appliances_phone_l_b_two {
+        padding-left: 1px;
+        position: relative; }
+        #appliances .appliances_phone_l .appliances_phone_l_b .appliances_phone_l_b_two .applianceslogol {
+          width: 100%;
+          height: 45px;
+          overflow: hidden; }
+  #appliances .appliances_phone_r {
+    width: 590px;
+    overflow: hidden; }
+    #appliances .appliances_phone_r .appliances_phone_r_t {
+      background-image: linear-gradient(90deg, #5e6c90, #4c5e8c);
+      background-color: #5e6c90;
+      height: 26px;
+      padding: 16px 20px 16px 25px; }
+    #appliances .appliances_phone_r .appliances_phone_r_b {
+      padding: 10px;
+      background-color: #fff;
+      overflow: hidden; }
+      #appliances .appliances_phone_r .appliances_phone_r_b .appliances_phone_r_b_one {
+        position: relative;
+        overflow: hidden; }
+        #appliances .appliances_phone_r .appliances_phone_r_b .appliances_phone_r_b_one .applnav {
+          width: 200%; }
+          #appliances .appliances_phone_r .appliances_phone_r_b .appliances_phone_r_b_one .applnav .appl4 {
+            position: relative;
+            float: left;
+            width: 183px;
+            height: 260px;
+            overflow: hidden;
+            margin-right: 10px;
+            background-color: #f7f7f7; }
+          #appliances .appliances_phone_r .appliances_phone_r_b .appliances_phone_r_b_one .applnav .appl5 {
+            float: left;
+            width: 376px;
+            height: 260px;
+            position: relative;
+            overflow: hidden; }
+          #appliances .appliances_phone_r .appliances_phone_r_b .appliances_phone_r_b_one .applnav .appl6 {
+            clear: both;
+            height: 130px;
+            overflow: hidden;
+            padding-top: 10px; }
+          #appliances .appliances_phone_r .appliances_phone_r_b .appliances_phone_r_b_one .applnav .coverup2 {
+            position: absolute;
+            right: -10px;
+            background-color: #fff;
+            width: 10px;
+            height: 1000px;
+            top: 0; }
+      #appliances .appliances_phone_r .appliances_phone_r_b .appliances_phone_r_b_two {
+        padding: 10px 0 0 0;
+        clear: both;
+        background-color: #fff; }
+        #appliances .appliances_phone_r .appliances_phone_r_b .appliances_phone_r_b_two .applianceslogo2 {
+          width: 100%;
+          height: 35px;
+          overflow: hidden; }
+
+#computer {
+  height: 523px;
+  margin-bottom: 40px; }
+  #computer .computer_t {
+    height: 26px;
+    padding: 16px 20px 16px 25px;
+    background-color: #488bad; }
+  #computer .computer_b {
+    padding: 10px;
+    background-color: #fff;
+    overflow: hidden; }
+    #computer .computer_b .computer_b_l {
+      width: 570px;
+      position: relative;
+      overflow: hidden; }
+      #computer .computer_b .computer_b_l .computer_b_l_b {
+        padding: 10px;
+        background-color: #fff;
+        overflow: hidden; }
+        #computer .computer_b .computer_b_l .computer_b_l_b .computer_b_l_b_one {
+          width: 200%; }
+          #computer .computer_b .computer_b_l .computer_b_l_b .computer_b_l_b_one .com1 {
+            position: relative;
+            float: left;
+            width: 183px;
+            height: 260px;
+            overflow: hidden;
+            margin-right: 10px;
+            background-color: #f7f7f7; }
+          #computer .computer_b .computer_b_l .computer_b_l_b .computer_b_l_b_one .com2 {
+            float: left;
+            width: 376px;
+            height: 260px;
+            position: relative;
+            overflow: hidden; }
+          #computer .computer_b .computer_b_l .computer_b_l_b .computer_b_l_b_one .com3 {
+            clear: both;
+            height: 130px;
+            overflow: hidden;
+            padding-top: 10px; }
+          #computer .computer_b .computer_b_l .computer_b_l_b .computer_b_l_b_one .coverup1 {
+            position: absolute;
+            right: -10px;
+            background-color: #fff;
+            width: 10px;
+            height: 1000px;
+            top: 0; }
+    #computer .computer_b .computer_b_r {
+      border-left: 1px solid #e6e6e6;
+      margin-left: 15px;
+      width: 569px;
+      padding-left: 15px;
+      position: relative;
+      overflow: hidden; }
+      #computer .computer_b .computer_b_r .computer_b_r_b {
+        padding: 10px;
+        background-color: #fff;
+        overflow: hidden; }
+        #computer .computer_b .computer_b_r .computer_b_r_b .computer_b_r_b_one {
+          position: relative;
+          overflow: hidden; }
+          #computer .computer_b .computer_b_r .computer_b_r_b .computer_b_r_b_one .comnav {
+            width: 200%; }
+            #computer .computer_b .computer_b_r .computer_b_r_b .computer_b_r_b_one .comnav .com4 {
+              position: relative;
+              float: left;
+              width: 183px;
+              height: 260px;
+              overflow: hidden;
+              margin-right: 10px;
+              background-color: #f7f7f7; }
+            #computer .computer_b .computer_b_r .computer_b_r_b .computer_b_r_b_one .comnav .com5 {
+              float: left;
+              width: 376px;
+              height: 260px;
+              position: relative;
+              overflow: hidden; }
+            #computer .computer_b .computer_b_r .computer_b_r_b .computer_b_r_b_one .comnav .com6 {
+              clear: both;
+              height: 130px;
+              overflow: hidden;
+              padding-top: 10px; }
+            #computer .computer_b .computer_b_r .computer_b_r_b .computer_b_r_b_one .comnav .coverup2 {
+              position: absolute;
+              right: -10px;
+              background-color: #fff;
+              width: 10px;
+              height: 1000px;
+              top: 0; }
+    #computer .computer_b .computer_b_bo {
+      padding: 10px 0 0;
+      clear: both;
+      background-color: #fff; }
+  #computer .computer_b_bo {
+    padding: 10px 0 0 0;
+    clear: both;
+    background-color: #fff; }
+    #computer .computer_b_bo .computerlogo {
+      width: 100%;
+      height: 35px;
+      overflow: hidden; }
+
+#movement {
+  height: 523px;
+  margin-bottom: 30px; }
+  #movement .lovemovement_l {
+    width: 590px;
+    margin-right: 10px;
+    overflow: hidden; }
+    #movement .lovemovement_l .lovemovement_l_t {
+      background-color: #3aaba9;
+      height: 26px;
+      padding: 16px 20px 16px 25px; }
+    #movement .lovemovement_l .lovemovement_l_b {
+      padding: 10px;
+      background-color: #fff;
+      overflow: hidden; }
+      #movement .lovemovement_l .lovemovement_l_b .lovemovement_l_b_one {
+        width: 200%; }
+        #movement .lovemovement_l .lovemovement_l_b .lovemovement_l_b_one .move1 {
+          position: relative;
+          float: left;
+          width: 183px;
+          height: 260px;
+          overflow: hidden;
+          margin-right: 10px;
+          background-color: #f7f7f7; }
+        #movement .lovemovement_l .lovemovement_l_b .lovemovement_l_b_one .move2 {
+          float: left;
+          width: 376px;
+          height: 260px;
+          position: relative;
+          overflow: hidden; }
+        #movement .lovemovement_l .lovemovement_l_b .lovemovement_l_b_one .move3 {
+          clear: both;
+          height: 130px;
+          overflow: hidden;
+          padding-top: 10px; }
+        #movement .lovemovement_l .lovemovement_l_b .lovemovement_l_b_one .coverup1 {
+          position: absolute;
+          right: -10px;
+          background-color: #fff;
+          width: 10px;
+          height: 1000px;
+          top: 0; }
+      #movement .lovemovement_l .lovemovement_l_b .lovemovement_l_b_two {
+        padding-left: 1px;
+        position: relative; }
+        #movement .lovemovement_l .lovemovement_l_b .lovemovement_l_b_two .movementlogol {
+          width: 100%;
+          height: 45px;
+          overflow: hidden; }
+  #movement .lovemovement_r {
+    width: 590px;
+    overflow: hidden; }
+    #movement .lovemovement_r .lovemovement_r_t {
+      background-image: linear-gradient(90deg, #568e7d, #447e6c);
+      background-color: #568e7d;
+      height: 26px;
+      padding: 16px 20px 16px 25px; }
+    #movement .lovemovement_r .lovemovement_r_b {
+      padding: 10px;
+      background-color: #fff;
+      overflow: hidden; }
+      #movement .lovemovement_r .lovemovement_r_b .lovemovement_r_b_one {
+        position: relative;
+        overflow: hidden; }
+        #movement .lovemovement_r .lovemovement_r_b .lovemovement_r_b_one .movenav {
+          width: 200%; }
+          #movement .lovemovement_r .lovemovement_r_b .lovemovement_r_b_one .movenav .move4 {
+            position: relative;
+            float: left;
+            width: 183px;
+            height: 260px;
+            overflow: hidden;
+            margin-right: 10px;
+            background-color: #f7f7f7; }
+          #movement .lovemovement_r .lovemovement_r_b .lovemovement_r_b_one .movenav .move5 {
+            float: left;
+            width: 376px;
+            height: 260px;
+            position: relative;
+            overflow: hidden; }
+          #movement .lovemovement_r .lovemovement_r_b .lovemovement_r_b_one .movenav .move6 {
+            clear: both;
+            height: 130px;
+            overflow: hidden;
+            padding-top: 10px; }
+          #movement .lovemovement_r .lovemovement_r_b .lovemovement_r_b_one .movenav .coverup2 {
+            position: absolute;
+            right: -10px;
+            background-color: #fff;
+            width: 10px;
+            height: 1000px;
+            top: 0; }
+      #movement .lovemovement_r .lovemovement_r_b .lovemovement_r_b_two {
+        padding: 10px 0 0 0;
+        clear: both;
+        background-color: #fff; }
+        #movement .lovemovement_r .lovemovement_r_b .lovemovement_r_b_two .movementlogo2 {
+          width: 100%;
+          height: 35px;
+          overflow: hidden; }
+
+#loveeat {
+  height: 523px;
+  margin-bottom: 40px; }
+  #loveeat .loveeat_t {
+    height: 26px;
+    padding: 16px 20px 16px 25px;
+    background-color: #eeb924; }
+  #loveeat .loveeat_b {
+    padding: 10px;
+    background-color: #fff;
+    overflow: hidden; }
+    #loveeat .loveeat_b .loveeat_b_l {
+      width: 570px;
+      position: relative;
+      overflow: hidden; }
+      #loveeat .loveeat_b .loveeat_b_l .loveeat_b_l_b {
+        padding: 10px;
+        background-color: #fff;
+        overflow: hidden; }
+        #loveeat .loveeat_b .loveeat_b_l .loveeat_b_l_b .loveeat_b_l_b_one {
+          width: 200%; }
+          #loveeat .loveeat_b .loveeat_b_l .loveeat_b_l_b .loveeat_b_l_b_one .eat1 {
+            position: relative;
+            float: left;
+            width: 183px;
+            height: 260px;
+            overflow: hidden;
+            margin-right: 10px;
+            background-color: #f7f7f7; }
+          #loveeat .loveeat_b .loveeat_b_l .loveeat_b_l_b .loveeat_b_l_b_one .eat2 {
+            float: left;
+            width: 376px;
+            height: 260px;
+            position: relative;
+            overflow: hidden; }
+          #loveeat .loveeat_b .loveeat_b_l .loveeat_b_l_b .loveeat_b_l_b_one .eat3 {
+            clear: both;
+            height: 130px;
+            overflow: hidden;
+            padding-top: 10px; }
+          #loveeat .loveeat_b .loveeat_b_l .loveeat_b_l_b .loveeat_b_l_b_one .coverup1 {
+            position: absolute;
+            right: -10px;
+            background-color: #fff;
+            width: 10px;
+            height: 1000px;
+            top: 0; }
+    #loveeat .loveeat_b .loveeat_b_r {
+      border-left: 1px solid #e6e6e6;
+      margin-left: 15px;
+      width: 569px;
+      padding-left: 15px;
+      position: relative;
+      overflow: hidden; }
+      #loveeat .loveeat_b .loveeat_b_r .loveeat_b_r_b {
+        padding: 10px;
+        background-color: #fff;
+        overflow: hidden; }
+        #loveeat .loveeat_b .loveeat_b_r .loveeat_b_r_b .loveeat_b_r_b_one {
+          position: relative;
+          overflow: hidden; }
+          #loveeat .loveeat_b .loveeat_b_r .loveeat_b_r_b .loveeat_b_r_b_one .eatnav {
+            width: 200%; }
+            #loveeat .loveeat_b .loveeat_b_r .loveeat_b_r_b .loveeat_b_r_b_one .eatnav .eat4 {
+              position: relative;
+              float: left;
+              width: 183px;
+              height: 260px;
+              overflow: hidden;
+              margin-right: 10px;
+              background-color: #f7f7f7; }
+            #loveeat .loveeat_b .loveeat_b_r .loveeat_b_r_b .loveeat_b_r_b_one .eatnav .eat5 {
+              float: left;
+              width: 376px;
+              height: 260px;
+              position: relative;
+              overflow: hidden; }
+            #loveeat .loveeat_b .loveeat_b_r .loveeat_b_r_b .loveeat_b_r_b_one .eatnav .eat6 {
+              clear: both;
+              height: 130px;
+              overflow: hidden;
+              padding-top: 10px; }
+            #loveeat .loveeat_b .loveeat_b_r .loveeat_b_r_b .loveeat_b_r_b_one .eatnav .coverup2 {
+              position: absolute;
+              right: -10px;
+              background-color: #fff;
+              width: 10px;
+              height: 1000px;
+              top: 0; }
+    #loveeat .loveeat_b .loveeat_b_bo {
+      padding: 10px 0 0;
+      clear: both;
+      background-color: #fff; }
+  #loveeat .loveeat_b_bo {
+    padding: 10px 0 0 0;
+    clear: both;
+    background-color: #fff; }
+    #loveeat .loveeat_b_bo .loveeatlogo {
+      width: 100%;
+      height: 35px;
+      overflow: hidden; }
+
+#home {
+  height: 523px;
+  margin-bottom: 30px; }
+  #home .home_l {
+    width: 590px;
+    margin-right: 10px;
+    overflow: hidden; }
+    #home .home_l .home_l_t {
+      background-color: #e16c46;
+      height: 26px;
+      padding: 16px 20px 16px 25px; }
+    #home .home_l .home_l_b {
+      padding: 10px;
+      background-color: #fff;
+      overflow: hidden; }
+      #home .home_l .home_l_b .home_l_b_one {
+        width: 200%; }
+        #home .home_l .home_l_b .home_l_b_one .home1 {
+          position: relative;
+          float: left;
+          width: 183px;
+          height: 260px;
+          overflow: hidden;
+          margin-right: 10px;
+          background-color: #f7f7f7; }
+        #home .home_l .home_l_b .home_l_b_one .home2 {
+          float: left;
+          width: 376px;
+          height: 260px;
+          position: relative;
+          overflow: hidden; }
+        #home .home_l .home_l_b .home_l_b_one .home3 {
+          clear: both;
+          height: 130px;
+          overflow: hidden;
+          padding-top: 10px; }
+        #home .home_l .home_l_b .home_l_b_one .coverup1 {
+          position: absolute;
+          right: -10px;
+          background-color: #fff;
+          width: 10px;
+          height: 1000px;
+          top: 0; }
+      #home .home_l .home_l_b .home_l_b_two {
+        padding-left: 1px;
+        position: relative; }
+        #home .home_l .home_l_b .home_l_b_two .homelogol {
+          width: 100%;
+          height: 45px;
+          overflow: hidden; }
+  #home .home_r {
+    width: 590px;
+    overflow: hidden; }
+    #home .home_r .home_r_t {
+      background-color: #a56741;
+      height: 26px;
+      padding: 16px 20px 16px 25px; }
+    #home .home_r .home_r_b {
+      padding: 10px;
+      background-color: #fff;
+      overflow: hidden; }
+      #home .home_r .home_r_b .home_r_b_one {
+        position: relative;
+        overflow: hidden; }
+        #home .home_r .home_r_b .home_r_b_one .homenav {
+          width: 200%; }
+          #home .home_r .home_r_b .home_r_b_one .homenav .home4 {
+            position: relative;
+            float: left;
+            width: 183px;
+            height: 260px;
+            overflow: hidden;
+            margin-right: 10px;
+            background-color: #f7f7f7; }
+          #home .home_r .home_r_b .home_r_b_one .homenav .home5 {
+            float: left;
+            width: 376px;
+            height: 260px;
+            position: relative;
+            overflow: hidden; }
+          #home .home_r .home_r_b .home_r_b_one .homenav .home6 {
+            clear: both;
+            height: 130px;
+            overflow: hidden;
+            padding-top: 10px; }
+          #home .home_r .home_r_b .home_r_b_one .homenav .coverup2 {
+            position: absolute;
+            right: -10px;
+            background-color: #fff;
+            width: 10px;
+            height: 1000px;
+            top: 0; }
+      #home .home_r .home_r_b .home_r_b_two {
+        padding: 10px 0 0 0;
+        clear: both;
+        background-color: #fff; }
+        #home .home_r .home_r_b .home_r_b_two .homelogo2 {
+          width: 100%;
+          height: 35px;
+          overflow: hidden; }
+
+#readcar {
+  height: 523px;
+  margin-bottom: 30px; }
+  #readcar .readcar_l {
+    width: 590px;
+    margin-right: 10px;
+    overflow: hidden; }
+    #readcar .readcar_l .readcar_l_t {
+      background-color: #756059;
+      height: 26px;
+      padding: 16px 20px 16px 25px; }
+    #readcar .readcar_l .readcar_l_b {
+      padding: 10px;
+      background-color: #fff;
+      overflow: hidden; }
+      #readcar .readcar_l .readcar_l_b .readcar_l_b_one {
+        width: 200%; }
+        #readcar .readcar_l .readcar_l_b .readcar_l_b_one .readcar1 {
+          position: relative;
+          float: left;
+          width: 183px;
+          height: 260px;
+          overflow: hidden;
+          margin-right: 10px;
+          background-color: #f7f7f7; }
+        #readcar .readcar_l .readcar_l_b .readcar_l_b_one .readcar2 {
+          float: left;
+          width: 376px;
+          height: 260px;
+          position: relative;
+          overflow: hidden; }
+        #readcar .readcar_l .readcar_l_b .readcar_l_b_one .readcar3 {
+          clear: both;
+          height: 130px;
+          overflow: hidden;
+          padding-top: 10px; }
+        #readcar .readcar_l .readcar_l_b .readcar_l_b_one .coverup1 {
+          position: absolute;
+          right: -10px;
+          background-color: #fff;
+          width: 10px;
+          height: 1000px;
+          top: 0; }
+      #readcar .readcar_l .readcar_l_b .readcar_l_b_two {
+        padding-left: 1px;
+        position: relative; }
+        #readcar .readcar_l .readcar_l_b .readcar_l_b_two .readcarlogol {
+          width: 100%;
+          height: 45px;
+          overflow: hidden; }
+  #readcar .readcar_r {
+    width: 590px;
+    overflow: hidden; }
+    #readcar .readcar_r .readcar_r_t {
+      background-color: #865454;
+      height: 26px;
+      padding: 16px 20px 16px 25px; }
+    #readcar .readcar_r .readcar_r_b {
+      padding: 10px;
+      background-color: #fff;
+      overflow: hidden; }
+      #readcar .readcar_r .readcar_r_b .readcar_r_b_one {
+        position: relative;
+        overflow: hidden; }
+        #readcar .readcar_r .readcar_r_b .readcar_r_b_one .readcarnav {
+          width: 200%; }
+          #readcar .readcar_r .readcar_r_b .readcar_r_b_one .readcarnav .readcar4 {
+            position: relative;
+            float: left;
+            width: 183px;
+            height: 260px;
+            overflow: hidden;
+            margin-right: 10px;
+            background-color: #f7f7f7; }
+          #readcar .readcar_r .readcar_r_b .readcar_r_b_one .readcarnav .readcar5 {
+            float: left;
+            width: 376px;
+            height: 260px;
+            position: relative;
+            overflow: hidden; }
+          #readcar .readcar_r .readcar_r_b .readcar_r_b_one .readcarnav .readcar6 {
+            clear: both;
+            height: 130px;
+            overflow: hidden;
+            padding-top: 10px; }
+          #readcar .readcar_r .readcar_r_b .readcar_r_b_one .readcarnav .coverup2 {
+            position: absolute;
+            right: -10px;
+            background-color: #fff;
+            width: 10px;
+            height: 1000px;
+            top: 0; }
+      #readcar .readcar_r .readcar_r_b .readcar_r_b_two {
+        padding: 10px 0 0 0;
+        clear: both;
+        background-color: #fff; }
+        #readcar .readcar_r .readcar_r_b .readcar_r_b_two .readcarlogo2 {
+          width: 100%;
+          height: 35px;
+          overflow: hidden; }
+
+#gamemony {
+  height: 523px;
+  margin-bottom: 30px; }
+  #gamemony .gamemony_l {
+    width: 590px;
+    margin-right: 10px;
+    overflow: hidden; }
+    #gamemony .gamemony_l .gamemony_l_t {
+      background-color: #6467a0;
+      height: 26px;
+      padding: 16px 20px 16px 25px; }
+    #gamemony .gamemony_l .gamemony_l_b {
+      padding: 10px;
+      background-color: #fff;
+      overflow: hidden; }
+      #gamemony .gamemony_l .gamemony_l_b .gamemony_l_b_one {
+        width: 200%; }
+        #gamemony .gamemony_l .gamemony_l_b .gamemony_l_b_one .gamemony1 {
+          position: relative;
+          float: left;
+          width: 183px;
+          height: 260px;
+          overflow: hidden;
+          margin-right: 10px;
+          background-color: #f7f7f7; }
+        #gamemony .gamemony_l .gamemony_l_b .gamemony_l_b_one .gamemony2 {
+          float: left;
+          width: 376px;
+          height: 260px;
+          position: relative;
+          overflow: hidden; }
+        #gamemony .gamemony_l .gamemony_l_b .gamemony_l_b_one .gamemony3 {
+          clear: both;
+          height: 130px;
+          overflow: hidden;
+          padding-top: 10px; }
+        #gamemony .gamemony_l .gamemony_l_b .gamemony_l_b_one .coverup1 {
+          position: absolute;
+          right: -10px;
+          background-color: #fff;
+          width: 10px;
+          height: 1000px;
+          top: 0; }
+      #gamemony .gamemony_l .gamemony_l_b .gamemony_l_b_two {
+        padding-left: 1px;
+        position: relative; }
+        #gamemony .gamemony_l .gamemony_l_b .gamemony_l_b_two .gamemonylogol {
+          width: 100%;
+          height: 45px;
+          overflow: hidden; }
+  #gamemony .gamemony_r {
+    width: 590px;
+    overflow: hidden; }
+    #gamemony .gamemony_r .gamemony_r_t {
+      background-color: #5a7259;
+      height: 26px;
+      padding: 16px 20px 16px 25px; }
+    #gamemony .gamemony_r .gamemony_r_b {
+      padding: 10px;
+      background-color: #fff;
+      overflow: hidden; }
+      #gamemony .gamemony_r .gamemony_r_b .gamemony_r_b_one {
+        position: relative;
+        overflow: hidden; }
+        #gamemony .gamemony_r .gamemony_r_b .gamemony_r_b_one .gamemonynav {
+          width: 200%; }
+          #gamemony .gamemony_r .gamemony_r_b .gamemony_r_b_one .gamemonynav .gamemony4 {
+            position: relative;
+            float: left;
+            width: 183px;
+            height: 260px;
+            overflow: hidden;
+            margin-right: 10px;
+            background-color: #f7f7f7; }
+          #gamemony .gamemony_r .gamemony_r_b .gamemony_r_b_one .gamemonynav .gamemony5 {
+            float: left;
+            width: 376px;
+            height: 260px;
+            position: relative;
+            overflow: hidden; }
+          #gamemony .gamemony_r .gamemony_r_b .gamemony_r_b_one .gamemonynav .gamemony6 {
+            clear: both;
+            height: 130px;
+            overflow: hidden;
+            padding-top: 10px; }
+          #gamemony .gamemony_r .gamemony_r_b .gamemony_r_b_one .gamemonynav .coverup2 {
+            position: absolute;
+            right: -10px;
+            background-color: #fff;
+            width: 10px;
+            height: 1000px;
+            top: 0; }
+      #gamemony .gamemony_r .gamemony_r_b .gamemony_r_b_two {
+        padding: 10px 0 0 0;
+        clear: both;
+        background-color: #fff; }
+        #gamemony .gamemony_r .gamemony_r_b .gamemony_r_b_two .gamemonylogo2 {
+          width: 100%;
+          height: 35px;
+          overflow: hidden; }
+
+#travel {
+  height: 523px;
+  margin-bottom: 30px; }
+  #travel .travel_l {
+    width: 590px;
+    margin-right: 10px;
+    overflow: hidden; }
+    #travel .travel_l .travel_l_t {
+      background-color: #5981a3;
+      height: 26px;
+      padding: 16px 20px 16px 25px; }
+    #travel .travel_l .travel_l_b {
+      padding: 10px;
+      background-color: #fff;
+      overflow: hidden; }
+      #travel .travel_l .travel_l_b .travel_l_b_one {
+        width: 200%; }
+        #travel .travel_l .travel_l_b .travel_l_b_one .travel1 {
+          position: relative;
+          float: left;
+          width: 183px;
+          height: 260px;
+          overflow: hidden;
+          margin-right: 10px;
+          background-color: #f7f7f7; }
+        #travel .travel_l .travel_l_b .travel_l_b_one .travel2 {
+          float: left;
+          width: 376px;
+          height: 260px;
+          position: relative;
+          overflow: hidden; }
+        #travel .travel_l .travel_l_b .travel_l_b_one .travel3 {
+          clear: both;
+          height: 130px;
+          overflow: hidden;
+          padding-top: 10px; }
+        #travel .travel_l .travel_l_b .travel_l_b_one .coverup1 {
+          position: absolute;
+          right: -10px;
+          background-color: #fff;
+          width: 10px;
+          height: 1000px;
+          top: 0; }
+      #travel .travel_l .travel_l_b .travel_l_b_two {
+        padding-left: 1px;
+        position: relative; }
+        #travel .travel_l .travel_l_b .travel_l_b_two .travellogol {
+          width: 100%;
+          height: 45px;
+          overflow: hidden; }
+  #travel .travel_r {
+    width: 590px;
+    overflow: hidden; }
+    #travel .travel_r .travel_r_t {
+      background-color: #708d33;
+      height: 26px;
+      padding: 16px 20px 16px 25px; }
+    #travel .travel_r .travel_r_b {
+      padding: 10px;
+      background-color: #fff;
+      overflow: hidden; }
+      #travel .travel_r .travel_r_b .travel_r_b_one {
+        position: relative;
+        overflow: hidden; }
+        #travel .travel_r .travel_r_b .travel_r_b_one .travelnav {
+          width: 200%; }
+          #travel .travel_r .travel_r_b .travel_r_b_one .travelnav .travel4 {
+            position: relative;
+            float: left;
+            width: 183px;
+            height: 260px;
+            overflow: hidden;
+            margin-right: 10px;
+            background-color: #f7f7f7; }
+          #travel .travel_r .travel_r_b .travel_r_b_one .travelnav .travel5 {
+            float: left;
+            width: 376px;
+            height: 260px;
+            position: relative;
+            overflow: hidden; }
+          #travel .travel_r .travel_r_b .travel_r_b_one .travelnav .travel6 {
+            clear: both;
+            height: 130px;
+            overflow: hidden;
+            padding-top: 10px; }
+          #travel .travel_r .travel_r_b .travel_r_b_one .travelnav .coverup2 {
+            position: absolute;
+            right: -10px;
+            background-color: #fff;
+            width: 10px;
+            height: 1000px;
+            top: 0; }
+      #travel .travel_r .travel_r_b .travel_r_b_two {
+        padding: 10px 0 0 0;
+        clear: both;
+        background-color: #fff; }
+        #travel .travel_r .travel_r_b .travel_r_b_two .travellogo2 {
+          width: 100%;
+          height: 35px;
+          overflow: hidden; }
+
+#morething {
+  margin-bottom: 30px;
+  min-height: 300px; }
+  #morething ul {
+    margin-left: -10px; }
+    #morething ul li {
+      float: left;
+      margin: 0 0 10px 10px; }
+      #morething ul li a {
+        display: block;
+        padding: 4px;
+        width: 220px;
+        height: 305px;
+        border: 1px solid #fff;
+        background-color: #fff;
+        text-align: center;
+        overflow: hidden; }
+        #morething ul li a img {
+          display: inline-block;
+          width: auto;
+          height: 220px;
+          background-color: #f7f7f7; }
+        #morething ul li a .jiage {
+          padding: 10px;
+          text-align: left; }
+          #morething ul li a .jiage .matter {
+            overflow: hidden;
+            margin-bottom: 5px;
+            height: 36px;
+            text-align: left; }
+          #morething ul li a .jiage .price {
+            font-size: 12px; }
+            #morething ul li a .jiage .price i {
+              margin-right: 3px;
+              font-family: arial;
+              font-weight: 400;
+              font-size: 12px;
+              color: #f10214; }
+            #morething ul li a .jiage .price span {
+              color: #f10214; }
 
 #footer {
   height: 570px;
