@@ -254,12 +254,13 @@ body {
 
 #nav_b {
     height: 480px;
-
     margin-bottom: 10px;
     .case {
         width: 190px;
         height: 480px;
         background: #6e6568;
+        position:relative;
+        z-index: 2;
         ul {
             overflow: hidden;
             padding: 16px 0;
@@ -270,6 +271,7 @@ body {
                 overflow: hidden;
                 padding-left: 12px;
                 height: 28px;
+                width:100%;
                 line-height: 28px;
                 outline-width: 700;
                 a {
@@ -280,12 +282,111 @@ body {
                     color: $registercolor;
                 }
             }
+            li:hover{
+                background: #999395;
+            }
+        }
+        .hidebox{
+            display: none;
+            position: absolute;
+            left: 190px;
+            top: 0;
+            width: 998px;
+            min-height: 478px;
+            border: 1px solid #f7f7f7;
+            box-shadow: 0 0 5px #ccc;
+            background-color: #f7f7f7;
+            .casehover{
+                padding: 20px 0 10px;
+                .casehover_l{
+                    width:800px;
+                    .casehover_l_t{
+                        overflow: hidden;
+                        padding-left: 20px;
+                        a{
+                            float: left;
+                            margin-right: 10px;
+                            padding: 0 10px;
+                            height: 24px;
+                            background-color: #6e6568;
+                            line-height: 24px;
+                            color: #fff;
+                        }
+                    }
+                    .casehover_l_b{
+                        overflow: hidden;
+                        padding: 10px 0 0 20px;
+                        dl{
+                            position: relative;
+                            padding-left: 80px;
+                            dt{
+                                overflow: hidden;
+                                position: absolute;
+                                left: 0;
+                                top: 9px;
+                                width: 70px;
+                                text-align: right;
+                                font-weight: 700;
+                                white-space: nowrap;
+                                text-overflow: ellipsis;
+                            }
+                            dd{
+                                overflow: hidden;
+                                padding: 6px 0;
+                                a{
+                                    float: left;
+                                    margin: 4px 0;
+                                    padding: 0 10px;
+                                    height: 16px;
+                                    border-left: 1px solid #e0e0e0;
+                                    line-height: 16px;
+                                    white-space: nowrap;
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+                .casehover_r{
+                    width: 198px;
+                    .casehover_r_t{
+                        margin: auto;
+                        width: 168px;
+                        font-size: 0;
+                        a{
+                            overflow: hidden;
+                            display: inline-block;
+                            width: 83px;
+                            height: 35px;
+                            margin: 0 0 1px 1px;
+                            background-color: #e7e7e7;
+                            img{
+                                vertical-align: middle;
+                            }
+                        }
+                    }
+                    .casehover_r_b{
+                            margin: 10px auto 0;
+                            width: 168px;
+                            a{
+                                display: block;
+                                margin-bottom: 1px;
+                                height: 134px;
+                                background-color: #e7e7e7;
+                                img{
+                                    border: 0;
+                                    vertical-align: middle;
+                                }
+                            }
+                    }
+                }
+            }
         }
     }
+    
     .banner {
         width: 790px;
         height: 100%;
-
         margin: 0 10px;
 //     ------------------- 轮播图
         .banner_img {
@@ -383,12 +484,23 @@ body {
         .banner_advert{
             margin-left: -10px;
             height: 130px;
+            a{
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    background: #fff;
+                    img{
+                        display: block;
+                        width: 390px;
+                        height: 130px;
+                    }
+                }
             .banner_advert_b_1{
                 overflow: hidden;
                 margin-left: 10px;
                 width: 390px;
                 height: 130px;
-                background: #f0f;
+                
             }
             .banner_advert_b_2{
                 overflow: hidden;
@@ -2070,6 +2182,59 @@ body {
         }
     }
 }
+//楼梯
+#loutinav {
+        width: 35px;
+        position: fixed;
+        top: 100px;
+        left: 40px;
+        border: 1px solid #ddd;
+        display: none;
+        ul li {
+            width: 35px;
+            height: 32px;
+            border-bottom: 1px dotted #DDDDDD;
+            font-size: 12px;
+            text-align: center;
+            position: relative;
+            cursor: pointer;
+            padding: 10px 0;
+            background: #918888;
+            color: #fff;
+            span {
+                width: 35px;
+                height: 32px;
+                padding: 10px 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+        li.last {
+            background: #5e4a4a;
+            color: #fff;
+            border-bottom: 1px solid #ddd;
+        }
+        li.active span {
+            background: #c00;
+            color: #fff;
+            display: block;
+        }
+        li:hover span {
+            background: #c00;
+            color: #fff;
+            display: block;
+        }
+    }
+    
+    
+    
+    
+    
+
+    
+
+    
 
 
 #footer {
