@@ -6,8 +6,9 @@ body{
     font-size: 14px;
 }
 #header{
+    height:110px;
     border-bottom: 1px solid #ccc;
-        box-shadow: 0 0 5px #999;
+        box-shadow: 0 0 10px #999;
     .logo{
        a{
             width: 160px;
@@ -43,6 +44,78 @@ body{
         .mian_l{
             width: 400px;
             float: left;
+            form{
+                .input_tip{
+                    color: #c5c5c5;
+                    height: 27px;
+                    font-size: 12px;
+                    padding-top: 5px;
+                }
+                label{
+                    float: left;
+                    width: 90px;
+                    height: 52px;
+                    line-height: 52px;
+                    padding-left: 20px;
+                }
+                input{
+                    border: 0 none;
+                    font-size: 14px;
+                    width: 190px;
+                    height: 19px;
+                    padding-bottom: 11px;
+                    padding-left: 20px;
+                    padding-top: 16px;
+                }
+                .mian_l_phone{
+                    button{
+                        position: absolute;
+                        right: 3px;
+                        top: 3px;
+                        width: 110px;
+                        height: 46px;
+                        border: none;
+                        background: #f2f2f2;
+                        color: #333;
+                        padding: 0;
+                    }
+                }
+                .mian_l_btn{
+                    button{
+                        width: 100%;
+                        height: 54px;
+                        color: #fff;
+                        background: #e22;
+                        border: 0;
+                        font-size: 16px;
+                    }
+                }
+                .notice{
+                    position: relative;
+                    border: solid 1px #ddd;
+                    width: 398px;
+                    height: 52px;
+                    z-index: 13;
+                    
+                }
+                .mian_l_code{
+                    position: relative;
+                    border: solid 1px #ddd;
+                    width: 398px;
+                    height: 52px;
+                    z-index: 0;
+                    .boximg{
+                        position: absolute;
+                        right: 3px;
+                        top: 3px;
+                        width: 110px;
+                        height: 46px;
+                        cursor: pointer;
+                        font: 20px/46px "";
+                    }
+                }
+                
+            }
         }
         .mian_r{
             float: left;
