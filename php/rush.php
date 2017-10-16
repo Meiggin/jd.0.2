@@ -7,7 +7,7 @@
 	mysql_select_db('tunbotu');
 	mysql_query('SET NAMES UTF8');
 	
-	$query='select * from img';
+	$query='select * from cainixihuan';
 	$result=mysql_query($query);
 	$arr=array();
 	for($i=0;$i<mysql_num_rows($result);$i++){
