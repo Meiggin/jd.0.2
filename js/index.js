@@ -93,7 +93,7 @@ $.ajax({
 		//获取scrolltop值
 		var $scrolltop=$(window).scrollTop();
 		console.log($scrolltop)
-		if($scrolltop>=1670){
+		if($scrolltop>=1300){
 			$('#loutinav').fadeIn(500);//fadeIn();
 		}else{
 			$('#loutinav').fadeOut(500);
@@ -129,3 +129,135 @@ $.ajax({
 		});
 	});
 /*--------------楼梯结束----------------*/
+/*------------------rush数据-------------*/
+$.ajax({
+	url: 'http://localhost/jd/php/rush.php',
+	dataType: 'json',
+	success: function(data) {
+		for(var i = 0; i < 5; i++) {
+			var rushlitimg = data[i]['imgUrl'];
+			$('.rush_li_t_img').eq(i).attr({
+				'src': rushlitimg
+			});
+		}
+	}
+})
+$.ajax({
+	url: 'http://localhost/jd/php/rush.php',
+	dataType: 'json',
+	success: function(data) {
+		for(var i = 0; i < 2; i++) {
+			var rushlitimg = data[i]['imgUrl'];
+			$('.rush_comm_rimg').eq(i).attr({
+				'src': rushlitimg
+			});
+		}
+	}
+})
+/*rush数据结束*/
+/*-----------------倒计时-----------------*/
+var intDiff = parseInt(1200);//倒计时总秒数量
+function timer(intDiff){
+    window.setInterval(function(){
+    var day=0,
+        hour=0,
+        minute=0,
+        second=0;//时间默认值        
+    if(intDiff > 0){
+        day = Math.floor(intDiff / (60 * 60 * 24));
+        hour = Math.floor(intDiff / (60 * 60)) - (day * 24);
+        minute = Math.floor(intDiff / 60) - (day * 24 * 60) - (hour * 60);
+        second = Math.floor(intDiff) - (day * 24 * 60 * 60) - (hour * 60 * 60) - (minute * 60);
+    }
+    if (minute <= 9) minute = '0' + minute;
+    if (second <= 9) second = '0' + second;
+    $('.hour').html('<s id="h"></s>'+hour+'');
+    $('.minute').html('<s></s>'+minute+'');
+    $('.second').html('<s></s>'+second+'');
+    intDiff--;
+    }, 1000);
+} 
+$(function(){
+    timer(intDiff);
+}); 
+/*---------------倒计时结束-------------*/
+/*-------------guide数据---------------*/
+$.ajax({
+	url: 'http://localhost/jd/php/rush.php',
+	dataType: 'json',
+	success: function(data) {
+		for(var i = 0; i < 16; i++) {
+			var guidestuffbimg = data[i]['imgUrl'];
+			$('.guide_stuff_b_img').eq(i).attr({
+				'src': guidestuffbimg
+			});
+		}
+	}
+})
+/*guide_special_b数据*/
+$.ajax({
+	url: 'http://localhost/jd/php/rush.php',
+	dataType: 'json',
+	success: function(data) {
+		for(var i = 0; i < 6; i++) {
+			var guidespecialbimg = data[i]['imgUrl'];
+			$('.guide_special_bimg').eq(i).attr({
+				'src': guidespecialbimg
+			});
+		}
+	}
+})
+/*-----------------morething数据-------------*/
+$.ajax({
+	url: 'http://localhost/jd/php/rush.php',
+	dataType: 'json',
+	success: function(data) {
+		for(var i = 0; i < 103; i++) {
+			var moreulimg = data[i]['imgUrl'];
+			var moreulp = data[i]['title']
+			$('.moreulimg').eq(i).attr({
+				'src': moreulimg
+			});
+			$('.matter').eq(i).text(moreulp);
+		}
+	}
+})
+/*-----------loveeat数据-----------*/
+$.ajax({
+	url: 'http://localhost/jd/php/rush.php',
+	dataType: 'json',
+	success: function(data) {
+		for(var i = 0; i < 100; i++) {
+			var eatimg = data[i]['imgUrl'];
+			$('.eatimg').eq(i).attr({
+				'src': eatimg
+			});
+		}
+	}
+})
+/*-------------loveeatlogo数据------------*/
+$.ajax({
+	url: 'http://localhost/jd/php/logo.php',
+	dataType: 'json',
+	success: function(data) {
+		for(var i = 0; i < 50; i++) {
+			var loveeatlogoimg1 = data[i]['imgUrl'];
+			$('.loveeatlogoimg').eq(i).attr({
+				'src': loveeatlogoimg1
+			});
+		}
+	}
+})
+/*----------chmina_item_wraph4img数据------------*/
+$.ajax({
+	url: 'http://localhost/jd/php/rush.php',
+	dataType: 'json',
+	success: function(data) {
+		for(var i = 0; i < 10; i++) {
+			var chminaitemwraph4img = data[i]['imgUrl'];
+			$('.chmina_item_wraph4img').eq(i).attr({
+				'src': chminaitemwraph4img
+			});
+		}
+	}
+})
