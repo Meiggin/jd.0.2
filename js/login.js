@@ -137,7 +137,7 @@ $(function(){
 			stuList.push(new Student($('input').eq(0).val(),$('input').eq(1).val(),$('input').eq(3).val(),stuList.length+1));
             localStorage.setItem('stuList',JSON.stringify(stuList));
             alert("注册成功");
-			window.open("userlist.html","_blank");
+
 		}else{						
 			$("#xieyi").next().next().next(".tips").text("请勾选协议");
 			$("#xieyi").next().next().next(".tips").css("color",'red');

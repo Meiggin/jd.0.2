@@ -6,8 +6,43 @@ $('.case ul li').hover(function(){
 })
 
 
-
-
+/*---------顶部搜索栏------*/
+$(window).scroll(function(){
+		//获取scrolltop值
+		var $scrolltop=$(window).scrollTop();
+		console.log($scrolltop)
+		if($scrolltop>=600){
+			$('#fixseach').fadeIn(500);//fadeIn();
+		}else{
+			$('#fixseach').fadeOut(500);
+		}
+});
+/*--------------楼梯结束----------------*/
+/*------------------rush数据-------------*/
+$.ajax({
+	url: 'http://localhost/jd/php/rush.php',
+	dataType: 'json',
+	success: function(data) {
+		for(var i = 0; i < 5; i++) {
+			var rushlitimg = data[i]['imgUrl'];
+			$('.rush_li_t_img').eq(i).attr({
+				'src': rushlitimg
+			});
+		}
+	}
+})
+$.ajax({
+	url: 'http://localhost/jd/php/rush.php',
+	dataType: 'json',
+	success: function(data) {
+		for(var i = 0; i < 2; i++) {
+			var rushlitimg = data[i]['imgUrl'];
+			$('.rush_comm_rimg').eq(i).attr({
+				'src': rushlitimg
+			});
+		}
+	}
+})
 /*-----------------轮播图--------------------*/
 $(function() {
 	var num = 0;
@@ -261,3 +296,11 @@ $.ajax({
 		}
 	}
 })
+/*--------------侧边栏分享-----------*/
+$(function () {
+    $('.allside').hover(function () {
+        $(this).children('em').stop(true,true).animate({ left: '-62px' }, 300);
+    }, function () {
+         $(this).children('em').stop(true,true).animate({ left: '0' }, 300);
+    });
+});
