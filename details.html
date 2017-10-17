@@ -1,9 +1,390 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>详情页</title>
+		<link rel="icon" href="//www.jd.com/favicon.ico" mce_href="//www.jd.com/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/details.css" />
+		<style>
+			@font-face {
+				font-family: iconfont;
+				src: url(//misc.360buyimg.com/mtd/pc/index/gb/images/iconfont.eot);
+				src: url(//misc.360buyimg.com/mtd/pc/index/gb/images/iconfont.eot#iefix) format('embedded-opentype'), url(//misc.360buyimg.com/mtd/pc/index/gb/images/iconfont.woff) format('woff'), url(//misc.360buyimg.com/mtd/pc/index/gb/images/iconfont.ttf) format('truetype'), url(//misc.360buyimg.com/mtd/pc/index/gb/images/iconfont.svg#iconfont) format('svg')
+			}
+			
+			.iconfont {
+				font-family: iconfont;
+				font-style: normal;
+				-webkit-text-stroke-width: .2px;
+				-moz-osx-font-smoothing: grayscale
+			}
+		</style>
 	</head>
+
 	<body>
+		<div id="nav_t">
+			<div class="meiggin positionrelative">
+				<ul>
+					<li>
+						<i class="iconfont"></i>
+						<a href="index.html">京东首页</a>
+					</li>
+				</ul>
+				<div class="nav_r positionabsolute">
+					<a href="#">你好，请登录</a>
+					<a href="#" class="register">免费注册</a>
+					<span>|</span>
+					<a href="#">我的订单</a>
+					<span>|</span>
+					<a href="#">我的京东</a><i class="iconfont"></i>
+					<span>|</span>
+					<a href="#">京东会员</a>
+					<span>|</span>
+					<a href="#">企业采购</a>
+					<span>|</span>
+					<a href="#">客户服务</a><i class="iconfont"></i>
+					<span>|</span>
+					<a href="#">网站导航</a><i class="iconfont"></i>
+					<span>|</span>
+					<i class="ewm">手机京东</i>
+				</div>
+			</div>
+		</div>
+		<div id="seach_wrap" class="meiggin clear">
+			<div class="logo">
+				<a href="#"></a>
+				<div>
+					<img src="images/slogan.jpg" />
+				</div>
+			</div>
+			<div class="seach">
+				<div class="form">
+					<input type="text" />
+					<button class="button">
+						<i></i>
+						搜索
+					</button>
+				</div>
+			</div>
+			<div class="thepre_sale">
+				<div>
+					<a href="#">
+						<i class="thepre_sale_l"></i>
+						<i class="thepre_sale_r">&gt;</i>
+						<span>我的预售</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="nav_b_wrap">
+			<div class="nav_b meiggin">
+				<a href="#">
+					首页
+					<span class="line"></span>
+				</a>
+				<a href="#">
+					发布会
+					<span class="line"></span>
+				</a>
+				<a href="#">
+					预售
+					<span class="line"></span>
+				</a>
+				<a href="#">
+					新品试用
+					<span class="line"></span>
+				</a>
+			</div>
+		</div>
+		<div id="listnav">
+			<div class="meiggin clear">
+				<div class="listnav_l clear">
+					<div class="listnav_l_item first">
+						<a href="#">家用电器</a>
+					</div>
+					<div class="listnav_l_item sep">&gt;</div>
+					<div class="listnav_l_item">
+						<a href="#">大 家 电</a>
+					</div>
+					<div class="listnav_l_item sep">&gt;</div>
+					<div class="listnav_l_item">
+						<a href="#">冰箱</a>
+					</div>
+					<div class="listnav_l_item sep">&gt;</div>
+					<div class="listnav_l_item haier">
+						<a href="#">海尔（Haier）</a>
+						<span class="arrow arr-close"></span>
+					</div>
+					<div class="listnav_l_item sep">&gt;</div>
+					<div class="listnav_l_item ellipsis">海尔BCD-160TMPQ</div>
+				</div>
+				<div class="listnav_r">
+					<div class="listnav_r1">
+						<a href="#">海尔官方旗舰店</a>
+						<em>
+							<span>JD</span>
+							自营
+						</em>
+					</div>
+					<div class="listnav_r2">
+						<div class="listnav_r2div">
+							<div class="listnav_r2div1">
+								<i></i> 联系供应商
+							</div>
+						</div>
+					</div>
+					<div class="listnav_r3">
+						<div class="listnav_r3div">
+							<div class="listnav_r3div1">
+								<a href="#">
+									<i></i> JIMI
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="listnav_r4">
+						<div class="listnav_r4div">
+							<i></i>
+							<span>关注店铺</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="details_wrap" class="meiggin clear">
+			<div class="details_l clear">
+				<div class="left_datu">
+						<img src="" id="datu">
+						<div id="mover"></div>
+				</div>
+				<div id="hide">
+						<img src="">
+				</div>
+				
+				<div class="details_l_ul_wrap">
+					<div class="details_l_ul">
+						<a class="lefta">
+							<i></i>
+						</a>
+						<a class="righta">
+							<i></i>
+						</a>
+						<div class="ul_wrap">
+							<ul>
+								<li class="active">
+									<img src="" class="ul_wrap_img"/>
+								</li>
+								<li>
+									<img src="" class="ul_wrap_img" />
+								</li>
+								<li>
+									<img src="" class="ul_wrap_img" />
+								</li>
+								<li>
+									<img src="" class="ul_wrap_img" />
+								</li>
+								<li>
+									<img src="" class="ul_wrap_img" />
+								</li>
+								<li>
+									<img src="" class="ul_wrap_img" />
+								</li>
+							</ul>
+						</div>
+
+					</div>
+
+				</div>
+				<div class="details_l_tubiao">
+					<div class="details_l_btl">
+						<a href="#" class="details_l_btl_1">
+							<i></i>
+							<em>关注</em>
+						</a>
+						<a href="#" class="details_l_btl_2">
+							<i></i>
+							<em>对比</em>
+						</a>
+					</div>
+					<div class="details_l_btr">
+						<a href="#">举报</a>
+					</div>
+				</div>
+			</div>
+			<div class="details_r clear">
+				<div class="divspan">
+					海尔（Haier）BCD-160TMPQ 160升 两门冰箱 冷冻速度快 经济实用两门冰箱
+				</div>
+				<div class="news_wrap">
+					<div class="news">
+						【国货自强】海尔明星两门冰箱 质量看得见 时尚钣金外观 低温补偿 要新鲜更要营养
+						<a href="#">点击进入国货盛宴</a>
+					</div>
+				</div>
+				<div class="timer">
+					<div class="buying">
+						<i></i>
+						<strong>预约抢购</strong>
+					</div>
+					<div class="peopletime">
+						<span class="item_1">
+							<i></i>
+							<em>5583</em>
+							人预约
+						</span>
+						<span class="item_2">
+							<i></i>
+							<span>抢购剩余</span>
+						<em>00小时00分00秒</em>
+						</span>
+					</div>
+				</div>
+				<div class="price_wrap">
+					<div class="price">
+						<div class="price1">
+							<div class="price1_t">
+								<div class="dt">京东价</div>
+								<div class="dd">
+									<span>
+										<span class="p_price">
+											<span>￥</span>
+									<span class="span2">1049.00</span>
+									</span>
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="price2">
+							<span>
+								<a href="#">
+									预约说明
+								</a>
+							</span>
+						</div>
+						<div class="price3">
+							<div class="price3_b">
+								<div class="dt">促销</div>
+								<div class="cx_r">
+									<em class="h1_red">限购</em>
+									<em class="hi_red">仅购买1件时享受优惠，超出数量以结算价为准</em>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="cart_details">
+					<div class="cart_details1 clear">
+						<div class="dt">增值业务</div>
+						<div class="dd">
+							<a href="#">
+								<i></i>
+								<span>以旧换新，闲置回收</span>
+							</a>
+						</div>
+
+					</div>
+					<div class="cart_details2 clear">
+						<div class="dt">配 送 至</div>
+						<div class="sanhuan dd">
+							<div class="sanhuan_details1">
+								<div>
+									<span class="text" data-res="">北京朝阳区三环以内</span>
+									<span class="arrow"></span>
+								</div>
+
+							</div>
+							<div class="sanhuan_details2">
+								<strong>有货</strong>
+							</div>
+							<div class="sanhuan_details3 clear">
+								<div class="title">支持</div>
+								<div class="cart_details3_a clear">
+									<a href="#">家电净洗</a>
+									<a href="#">99元免基础运费</a>
+									<a href="#" class="last">货到付款</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cart_details3 dd">
+						<div class="cart_details3_service">由
+							<span class="hl_red">京东</span> 发货,供应商提供售后服务. 明天18:00前下单,预计<b>(10月18日)</b>送达,因近期安检要求提升，10月13日至10月31日期间，您的商品可能会出现配送时限延长，我们会全力加快为您服务，谢谢！.
+						</div>
+					</div>
+					<div class="cart_details4">
+						<div class="dt">重　　量</div>
+						<div class="dd">不计重量</div>
+					</div>
+					<div class="xian"></div>
+					<div class="cart_details5">
+						<div class="dt">选择颜色</div>
+						<div class="dd clear">
+							<div class="dd_item1">
+								<a href="#">
+									<img src="//img13.360buyimg.com/n9/s40x40_jfs/t3163/213/3099076128/49548/87986bc4/57ec886eN35eca638.jpg">
+									<i>190升</i>
+								</a>
+							</div>
+							<div class="dd_item2">
+								<b></b>
+								<a href="#">
+									<img src="//img13.360buyimg.com/n9/s40x40_jfs/t3163/213/3099076128/49548/87986bc4/57ec886eN35eca638.jpg">
+									<i>190升</i>
+								</a>
+							</div>
+							<div class="dd_item3">
+								<b></b>
+								<a href="#">
+									<img src="//img13.360buyimg.com/n9/s40x40_jfs/t3163/213/3099076128/49548/87986bc4/57ec886eN35eca638.jpg">
+									<i>190升</i>
+								</a>
+							</div>
+
+						</div>
+					</div>
+					<div class="xian"></div>
+					<div class="cart_details6 clear">
+						<div class="jiajian">
+							<input type="text" value="0" />
+							<a class="shang">+</a>
+							<a class="xia">-</a>
+						</div>
+						<a href="#" class="liji">立即抢购</a>
+						<span>
+							<i></i>
+							分享
+						</span>
+					</div>
+					<div class="cart_details7">
+						<div class="dt">本地活动</div>
+						<div class="dd">
+							<ol class="clear">
+								<li>
+									<a href="#">企业采购 &gt;&gt;</a>
+								</li>
+								<li>
+									<a href="#">家电服务 &gt;&gt;</a>
+								</li>
+							</ol>
+						</div>
+					</div>
+					<div class="cart_details8">
+						<div class="dt">温馨提示</div>
+						<div class="dd">
+							<ol>
+								<li>·请完成预约后及时抢购！</li>
+								<li>·支持7天无理由退货</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<img src="images/aaaaaaaa.PNG"  class="tupian"/>
 	</body>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/details.js"></script>
 </html>
+https://item.jd.com/1433516.html
