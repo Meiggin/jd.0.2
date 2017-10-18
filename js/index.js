@@ -1,4 +1,8 @@
-/*-------------弹出框--------------*/
+define(['jquery'],function($){
+	
+	return {
+		change:(function(){
+			/*-------------弹出框--------------*/
 $('.case ul li').hover(function(){
 	$('.hidebox').show()
 },function(){
@@ -17,7 +21,7 @@ $(window).scroll(function(){
 			$('#fixseach').fadeOut(500);
 		}
 });
-/*--------------楼梯结束----------------*/
+
 /*------------------rush数据-------------*/
 $.ajax({
 	url: 'http://localhost/jd/php/rush.php',
@@ -191,7 +195,7 @@ $.ajax({
 })
 /*rush数据结束*/
 /*-----------------倒计时-----------------*/
-var intDiff = parseInt(1200);//倒计时总秒数量
+var intDiff = parseInt(12000);//倒计时总秒数量
 function timer(intDiff){
     window.setInterval(function(){
     var day=0,
@@ -304,3 +308,43 @@ $(function () {
          $(this).children('em').stop(true,true).animate({ left: '0' }, 300);
     });
 });
+/*-------------tab切换------------*/
+$('.hi_c_1').on('mouseover','.hi2',function(){
+	$('.xian').stop(true,true).animate({left:'53px'},400);
+	$('.hi_c_22').css({display:'block'})
+	$('.hi_c_21').css({display:'none'})
+})
+$('.hi_c_1').on('mouseover','.hi1',function(){
+	$('.xian').stop(true,true).animate({left:'-2px'},400);
+	$('.hi_c_22').css({display:'none'})
+	$('.hi_c_21').css({display:'block'})
+})
+	
+	
+	
+//懒加载
+//$(window).on('scroll',function result(){
+//          if(isVisible($('#lovelife'))){
+//              console.log(true);
+//          }
+//          else{
+//              console.log(false);
+//          }
+//      }) 
+//      function isVisible($img){
+//          var windowHeight = $(window).height(),
+//              windowScrolltop = $(window).scrollTop(),
+//              imgoffsetTop = $img.offset().top,
+//              imgHeight = $img.outerHeight(true);
+//          if(windowHeight + windowScrolltop > imgoffsetTop && windowScrolltop < imgoffsetTop + imgHeight ){
+//              return true;
+//          }
+//          else {
+//              return false;
+//          }
+//      }
+
+		})(),
+
+	}
+})

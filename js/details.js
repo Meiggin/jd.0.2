@@ -1,4 +1,8 @@
-//数据
+define(['jquery'],function($){
+	
+	return {
+		change:(function(){
+			//数据
 $.ajax({
 	url: 'http://localhost/jd/php/details.php',
 	dataType: 'json',
@@ -152,3 +156,20 @@ $.ajax({
 					$('.jiajian input').val(parseInt($('.jiajian input').val())-1);
 				}
 			})
+//获取cookie
+var cardlist=[];
+$('.liji').on('click',function(e){
+	console.log(e.target.nodeName.toLowerCase())
+	var obj = {};
+	obj.ourl=$('#datu').attr('src')
+	obj.title=$('.divspan').text()
+	obj.price=$('.span2').text()
+	obj.num=$('.num').val()			
+	console.log(obj)
+	cardlist.push(obj)
+	document.cookie='cardlist='+JSON.stringify(cardlist)
+})
+
+		})(),
+	}
+})
