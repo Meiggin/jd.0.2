@@ -89,10 +89,13 @@ body {
         position: absolute;
         right: 3px;
         top: 3px;
-        width: 110px;
-        height: 46px;
+        width: 108px;
+        height: 44px;
         cursor: pointer;
-        font: 20px/46px ""; }
+        font: 14px/44px "";
+        text-align: center;
+        background: white;
+        border: 1px solid #ff0036; }
   #mian .mian_table .mian_r {
     float: left;
     margin-left: 104px;

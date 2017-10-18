@@ -756,6 +756,7 @@
           font-weight: 700;
           display: inline-block;
           text-align: center;
+          cursor: pointer;
           background-color: #df3033;
           color: #fff; }
         #details_wrap .details_r .cart_details .cart_details6 span {
