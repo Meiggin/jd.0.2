@@ -29,21 +29,21 @@
 					<form method="post">
 						<div class="mian_l_use notice">
 							<label>用　户　名</label>
-							<input type="text" placeholder="您的账户名和登陆名" />
+							<input type="text" placeholder="您的账户名和登陆名" id="user_name" />
 						</div>
 						<div class="mian_l_use_b input_tip">
 							<span></span>
 						</div>
 						<div class="mian_l_password notice">
 							<label>设 置 密 码</label>
-							<input type="text" placeholder="建议至少使用两种字符组合" />
+							<input type="password" placeholder="建议至少使用两种字符组合"  id="user_password"/>
 						</div>
 						<div class="mian_l_password_b input_tip">
 							<span></span>
 						</div>
 						<div class="mian_l_password2 notice">
 							<label>确 认 密 码</label>
-							<input type="text" placeholder="请再次输入密码" />
+							<input type="password" placeholder="请再次输入密码" id="user_passwordagain" />
 						</div>
 						<div class="mian_l_password2_b input_tip">
 							<span></span>
@@ -52,22 +52,22 @@
 							<label>中国 0086
 							<a href="#"></a>
 							</label>
-							<input type="text" placeholder="建议使用常用手机" />
+							<input type="text" placeholder="建议使用常用手机" id="user_mobile" />
 						</div>
 						<div class="mian_l_tel_b input_tip">
 							<span></span>
 						</div>
 						<div class="mian_l_code notice">
 							<label>验　证　码</label>
-							<input type="text" placeholder="请输入验证码" />
-							<span class="boximg"></span>
+							<input type="text" placeholder="请输入验证码" id="user_test" />
+							<span class="boximg">点击获取验证码</span>
 						</div>
-						<div class="mian_l_code——b input_tip">
+						<div class="mian_l_code_b input_tip">
 							<span></span>
 						</div>
 						<div></div>
 						<div class="mian_l_btn">
-							<button>
+							<button id="loginNow">
 								立即注册
 							</button>
 						</div>
@@ -120,6 +120,9 @@
 			</div>
 		</div>
 		<script src="js/jquery-1.11.3.js"></script>
-		<script src="js/login.js"></script>
+		<script type="text/javascript" src='requirejs/require.js' defer async='true' 
+		data-main='js/login_main.js'>
+		
+	</script>
 	</body>
 </html>
