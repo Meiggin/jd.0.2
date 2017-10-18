@@ -3842,7 +3842,7 @@ body {
     width: 35px;
     position: fixed;
     top: 100px;
-    left: 40px;
+    left: 30px;
     border: 1px solid #ddd;
     display: none;
     ul li {
@@ -4013,6 +4013,230 @@ body {
             }
             .partner_b_a_6 {
                 background: url(../images/map.png) no-repeat -105px -151px;
+            }
+        }
+    }
+}
+
+//侧边栏
+#fixside {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9990;
+    width: 0;
+    height: 100%;
+    .fixside_all {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 0;
+        height: 100%;
+        border-right: 6px solid #7a6e6e;
+        .fixside_all_im {
+            position: absolute;
+            top: 50%;
+            left: -29px;
+            width: 35px;
+            margin-top: -61px;
+            
+            .allside {
+                position: relative;
+                width: 35px;
+                height: 35px;
+                margin-bottom: 1px;
+                cursor: pointer;
+                background-color: #7a6e6e;
+                i {
+                    width: 34px;
+                    height: 35px;
+                    margin-left: 1px;
+                    position: relative;
+                    z-index: 2;
+                    background-color: #7a6e6e;
+                    display: inline-block;
+                }
+                em {
+                    width: 62px;
+                    height: 35px;
+                    line-height: 35px;
+                    color: rgb(255, 255, 255);
+                    text-align: center;
+                    font-family: 微软雅黑;
+                    position: absolute;
+                    z-index: 1;
+                    left: 0px;
+                    top: 0px;
+                    background-color: rgb(122, 110, 110);
+                    border-radius: 3px 0px 0px 3px;
+                }
+            }
+                .movefexside1{
+                    background: url(../images/toolbars.png) -88px -175px no-repeat;
+                }
+                .movefexside1:hover{
+                    background-color: #c81623;
+                }
+                .movefexside2:hover{
+                    background-color: #c81623;
+                }
+                .movefexside3:hover{
+                    background-color: #c81623;
+                }
+                .movefexside4:hover{
+                    background-color: #c81623;
+                }
+                .movefexside5:hover{
+                    background-color: #c81623;
+                }
+                .movefexside6:hover{
+                    background-color: #c81623;
+                }
+                .movefexside2{
+                    background: url(../images/toolbars.png) -50px 0 no-repeat;
+                }
+                .movefexside3{
+                    background: url(../images/toolbars.png) -50px -50px no-repeat;
+                }
+                .movefexside4{
+                    background: url(../images/toolbars.png) -50px -100px no-repeat;
+                }
+                .movefexside5{
+                    background: url(../images/toolbars.png) -190px -150px no-repeat;
+                }
+                .movefexside6{
+                    background: url(../images/toolbars.png) -50px -150px no-repeat;
+                }
+        }
+    }
+}
+
+//  .member{
+//      position: relative;
+//      width: 35px;
+//      height: 35px;
+//      right:0;
+//      margin-bottom: 1px;
+//      cursor: pointer;
+//      background-color: #7a6e6e;
+//      border-radius: 3px 0 0 3px;
+//      .movefexside1{
+//          width: 34px;
+//          height: 35px;
+//          margin-left: 1px;
+//          position: relative;
+//          z-index: 2;
+//          background-color: #7a6e6e;
+//          background-position: -88px -175px;
+//              background-image: url(//static.360buyimg.com/devfe/toolbar/1.0.0/css/i/toolbars.png);
+//                  background-repeat: no-repeat;
+//                  display: inline-block;
+//      }
+//      em{
+//          width: 62px;
+//  height: 35px;
+//  line-height: 35px;
+//  color: rgb(255, 255, 255);
+//  text-align: center;
+//  font-family: 微软雅黑;
+//  position: absolute;
+//  z-index: 1;
+//  left: 35px;
+//  top: 0px;
+//  background-color: rgb(122, 110, 110);
+//  border-radius: 3px 0px 0px 3px;
+//  font-style: normal;
+//      }
+//  }
+//顶部搜索栏
+#fixseach {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0px;
+    display: none;
+    width: 100%;
+    border-bottom: 2px solid #f10214;
+    background-color: #fff;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+    .minfixseach {
+        margin: auto;
+        width: 1190px;
+        height: 48px;
+        position: relative;
+        z-index: 1;
+        .fixseach_logo {
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 4px;
+            width: 125px;
+            height: 40px;
+            a {
+                background-image: url(//img30.360buyimg.com/da/jfs/t7570/244/1793677028/5521/5094053/59a056c4N650ee89e.png);
+                background-size: 125px 40px;
+                overflow: hidden;
+                display: block;
+                width: 125px;
+                height: 40px;
+                background-repeat: no-repeat;
+                text-indent: -999px;
+            }
+        }
+        .fexform {
+            top: 6px;
+            position: absolute;
+            left: 320px;
+            width: 550px;
+            height: 35px;
+            input {
+                left: 0;
+                padding: 4px;
+                width: 490px;
+                height: 25px;
+                border: 1px solid #f10215;
+                line-height: 25px;
+                font-size: 14px;
+                color: #989898;
+                position: absolute;
+                top: 0;
+                outline: none;
+                border-color: #efefef;
+                background-color: #efefef;
+            }
+            a {
+                display: block;
+                width: 19px;
+                height: 15px;
+                background: url(//misc.360buyimg.com/product/search/1.0.4/css/i/sprite-photo-search.png) no-repeat;
+                cursor: pointer;
+                position: absolute;
+                right: 65px;
+                top: 10px;
+                width: 19px;
+                height: 15px;
+                overflow: hidden;
+            }
+            .seach_btn {
+                right: 0;
+                width: 50px;
+                height: 35px;
+                line-height: 35px;
+                border: none;
+                background-color: #f10215;
+                font-size: 20px;
+                font-weight: 700;
+                color: #fff;
+                position: absolute;
+                top: 0;
+                outline: none;
+                i {
+                    font-style: normal;
+                    font-size: 20px;
+                    font-weight: 700;
+                    color: #fff;
+                    line-height: 35px;
+                }
             }
         }
     }
