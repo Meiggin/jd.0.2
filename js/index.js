@@ -1,5 +1,4 @@
 define(['jquery'],function($){
-	
 	return {
 		change:(function(){
 			/*-------------弹出框--------------*/
@@ -319,9 +318,22 @@ $('.hi_c_1').on('mouseover','.hi1',function(){
 	$('.hi_c_22').css({display:'none'})
 	$('.hi_c_21').css({display:'block'})
 })
+
+/*--------------搜索框------------*/
+/*$('#searchInput').on('input',function(){
+console.log('aaaaa');
+	$.ajax({
+		url:'https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd='+$(this).val()+'&p=3&req=2&csor=0&cb=baidu',
+		type:'GET',
+		datatype:'jsonp'
+	}).done(function(data){
+		console.log(data);
+	}).fail(function(){
+		console.log('wooo');
+	})
 	
-	
-	
+})*/
+
 //懒加载
 //$(window).on('scroll',function result(){
 //          if(isVisible($('#lovelife'))){
